@@ -126,7 +126,7 @@ impl<T: ?Sized> Clone for Share<T> {
                     Err(_) => continue,
                 }
             }
-            #[allow(unreachable_code)]
+            #[expect(unreachable_code)]
             {
                 unreachable!()
             }
@@ -162,7 +162,7 @@ impl<T: ?Sized> Drop for Share<T> {
                     Err(_) => continue,
                 }
             }
-            #[allow(unreachable_code)]
+            #[expect(unreachable_code)]
             {
                 unreachable!()
             }
@@ -226,7 +226,7 @@ impl<T: ?Sized> Drop for ShareMut<T> {
                 },
                 _ => unreachable!()
             }
-            #[allow(unreachable_code)]
+            #[expect(unreachable_code)]
             {
                 unreachable!()
             }
@@ -269,7 +269,7 @@ impl<T: ?Sized> Host<T> {
                     Err(_) => continue,
                 }
             }
-            #[allow(unreachable_code)]
+            #[expect(unreachable_code)]
             {
                 unreachable!()
             }
@@ -313,7 +313,7 @@ impl<T: ?Sized> Future for Host<T> {
                     Err(_) => continue,
                 }
             }
-            #[allow(unreachable_code)]
+            #[expect(unreachable_code)]
             {
                 unreachable!()
             }
@@ -354,7 +354,7 @@ impl<T: ?Sized> Drop for Host<T> {
                     Err(_) => continue,
                 }
             }
-            #[allow(unreachable_code)]
+            #[expect(unreachable_code)]
             {
                 unreachable!()
             }
@@ -403,7 +403,7 @@ impl<T: ?Sized> Future for HostMut<T> {
                     Err(_) => continue,
                 }
             }
-            #[allow(unreachable_code)]
+            #[expect(unreachable_code)]
             {
                 unreachable!()
             }
@@ -444,7 +444,7 @@ impl<T: ?Sized> Drop for HostMut<T> {
                     Err(_) => continue,
                 }
             }
-            #[allow(unreachable_code)]
+            #[expect(unreachable_code)]
             {
                 unreachable!()
             }
@@ -493,7 +493,7 @@ impl<T: ?Sized> HostPinned<T> {
                     Err(_) => continue,
                 }
             }
-            #[allow(unreachable_code)]
+            #[expect(unreachable_code)]
             {
                 unreachable!()
             }
@@ -537,7 +537,7 @@ impl<T: ?Sized> Future for HostPinned<T> {
                     Err(_) => continue,
                 }
             }
-            #[allow(unreachable_code)]
+            #[expect(unreachable_code)]
             {
                 unreachable!()
             }
@@ -578,7 +578,7 @@ impl<T: ?Sized> Drop for HostPinned<T> {
                     Err(_) => continue,
                 }
             }
-            #[allow(unreachable_code)]
+            #[expect(unreachable_code)]
             {
                 unreachable!()
             }
@@ -633,7 +633,7 @@ impl<T: ?Sized> Future for HostPinnedMut<T> {
                     Err(_) => continue,
                 }
             }
-            #[allow(unreachable_code)]
+            #[expect(unreachable_code)]
             {
                 unreachable!()
             }
@@ -674,7 +674,7 @@ impl<T: ?Sized> Drop for HostPinnedMut<T> {
                     Err(_) => continue,
                 }
             }
-            #[allow(unreachable_code)]
+            #[expect(unreachable_code)]
             {
                 unreachable!()
             }
